@@ -6,6 +6,7 @@
     "start": "node app"
   },
   "dependencies": {
+    "binary-search": "*",
     "express": "*",
     "jade": "*",
     "stylus": "*"

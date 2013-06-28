@@ -1,5 +1,24 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block body
+  .text-center
+    h1 Nurblr
+  .row
+    .small-6.columns
+      textarea.input(placeholder='Nurble me!')
+    .small-6.columns
+      p.output Type something in!
+      p.statistics
+        b.words 0 
+        | nurbled words.
+        br
+        b.percent 0% 
+        | nurblage.
+  footer.text-center
+    p Built by 
+      a(href='//lehaozhang.com') Leo Zhang
+      br
+      | Nurbling and related awesomesauce &copy; 
+      a(href='http://www.smbc-comics.com/?id=2779') Zach Weinersmith
+  script(src='/javascripts/mootools-1.4.5.js')
+  script(src='/javascripts/main.js')
