@@ -33,7 +33,7 @@ for(var i = 0;i < langData.length;i++){
   for(var j = 0;j < nouns.length + 1;j++){
     if(
       word.substring(word.indexOf('|' + delimiter)).indexOf(nouns[j]) === 2 ||
-      word.substring(word.indexOf(delimiter)).indexOf(nouns[j]) === 2
+      word.substring(word.indexOf(delimiter)).indexOf(nouns[j]) === 1
       ){
       // Clean up nouns.
       output.push(word.substring(0,word.indexOf(delimiter)).toLowerCase());
