@@ -36,7 +36,7 @@ for(var i = 0;i < langData.length;i++){
       word.substring(word.indexOf(delimiter)).indexOf(nouns[j]) === 1
       ){
       // Clean up nouns.
-      output.push(word.substring(0,word.indexOf(delimiter)).toLowerCase());
+      output.push(word.substring(0,word.indexOf(delimiter)));
       break;
     }
   }
